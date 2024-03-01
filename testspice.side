@@ -2,10 +2,10 @@
   "id": "10a4248e-16c4-432f-bbe3-3f0e92fbd188",
   "version": "2.0",
   "name": "testspice",
-  "url": "https://www.mea.gov.in/Images/CPV/English-Circular-for-Attache.pdf",
+  "url": "https://www.mea.gov.in/CNV-2024.htm",
   "tests": [{
     "id": "2db1e4b3-b276-41e0-b9ee-db45e26927c0",
-    "name": "Untitled",
+    "name": "testspice",
     "commands": [{
       "id": "3f3296d1-887a-49b2-bacd-0b23e22e1050",
       "comment": "",
@@ -48,24 +48,6 @@
       "comment": "",
       "command": "executeScript",
       "target": "fetch(window.location.href) .then(response => response.blob()) .then(blob => {     var url = URL.createObjectURL(blob);     var anchor = document.createElement('a');     anchor.href = url;     anchor.download = 'filename.pdf';     document.body.appendChild(anchor);     anchor.click(); });",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "3605de0e-b507-4707-8bb2-3e89e72d4b5f",
-    "name": "testpdfdownload",
-    "commands": [{
-      "id": "02b9eca2-16ff-4a28-9464-e652b752d0e1",
-      "comment": "",
-      "command": "",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "55775a7f-5ccf-4139-a561-88338a98478d",
-      "comment": "",
-      "command": "executeScript",
-      "target": "var anchor = document.createElement('a'); anchor.href = window.location.href; anchor.innerText = 'Download this page'; document.body.appendChild(anchor); anchor.click();",
       "targets": [],
       "value": ""
     }]
